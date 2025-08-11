@@ -39,30 +39,19 @@ This workflow watches a Google Sheet for new content ideas, routes each idea bas
 7. **ClickUp Node** – Creates a task in ClickUp to track the idea.
 
 ---
+## Workflow
+<img width="1232" height="484" alt="Screenshot 2025-08-11 at 17 52 26" src="https://github.com/user-attachments/assets/422b2427-2c63-45b7-84ef-e3f1295cc486" />
+
+
 
 ## 📬 Example Output
 <img width="769" height="508" alt="Screenshot 2025-08-11 at 17 47 49" src="https://github.com/user-attachments/assets/2084b4c7-de67-40b0-b31f-bb5ca7207748" />
 
 
-
 ---
 
-## Workflow
+## Skills Learned
 
-```mermaid
-flowchart LR
-    A[Google Trigger] --> B[Set Node]
-    B --> C[Switch Node]
-    C -->|Team A| D[Set Node - Team A Email]
-    C -->|Team B| E[Set Node - Team B Email]
-    C -->|Team C| F[Set Node - Team C Email]
-    D --> G[Send Email - Team A]
-    E --> H[Send Email - Team B]
-    F --> I[Send Email - Team C]
-    G & H & I --> J[Merge Node]
-    J --> K[ClickUp Node]
-
-Skills Learned
 Connecting and authenticating Google Sheets and ClickUp APIs
 
 Building dynamic email workflows with n8n
